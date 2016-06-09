@@ -17,6 +17,7 @@ class Pulses(protected val pattern: Array[Boolean]) {
   def this(ints: List[Int]) { this(ints.map(_ == 1).toArray) }
 
   def toArray = pattern
+  def toList  = pattern.toList
 
   def printXd(f: Boolean) : Char = if (f) 'X' else '.'
   def print10(f: Boolean) : Char = if (f) '1' else '0'

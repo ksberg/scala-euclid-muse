@@ -13,4 +13,5 @@ libraryDependencies += "org.scalatest" %% "scalatest" % "2.2.4" % "test"
 
 initialCommands in console :=
   """import bitzguild.midi._
+     |import a.MidiFiles._
   """.stripMargin
